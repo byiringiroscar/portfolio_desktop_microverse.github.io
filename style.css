@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -26,9 +27,21 @@ ul li {
   padding-left: 150px;
   padding-right: 150px;
   display: flex;
-  justify-content: space-between;
+}
+
+.main-nav nav {
+  width: 50%;
+  height: 100%;
+}
+
+.main-logo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
   align-items: center;
 }
+
 .main-logo a {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -37,21 +50,204 @@ ul li {
   line-height: 20px;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
-.main-nav nav ul {
+
+.social-icon ul {
   display: flex;
-  gap: 32px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
-.main-nav > nav > ul > li a {
+
+.project-detail ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-two ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-three ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-four ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-five ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-six ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.single-tech .tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.contact-footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 21px;
+  padding-top: 25px;
+}
+
+.main-nav nav .all-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 32px;
+  justify-content: end;
+  align-items: center;
+}
+
+.project-detail a {
+  width: 130px;
+  height: 48px;
+  background: #f55800;
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.project-one a {
+  width: 100%;
+  height: 10%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #f55800;
+}
+
+.about-me a {
+  width: 161px;
+  height: 48px;
+  padding: 12px;
+  background: #f55800;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.project-two ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.project-three ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.project-four ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.project-five ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.project-six ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.project-detail > ul > li > a {
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.main-nav > nav > .all-nav > .single-nav .nav-link {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .main-body {
@@ -62,13 +258,13 @@ ul li {
   background-size: 35% 100%;
   background-repeat: no-repeat;
   background-position: top right;
-  padding-top: 204px;
-  padding-left: 36px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   padding-left: 90px;
   gap: 89px;
 }
+
 .main-body .main-container {
   width: 566px;
   display: flex;
@@ -76,12 +272,6 @@ ul li {
   gap: 24px;
 }
 
-.social-icon ul{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
 .main-container .intro {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -90,710 +280,1261 @@ ul li {
   line-height: 82px;
   color: #f55800;
 }
+
 .main-container .title {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: #fff;
 }
 
-.main-container .description{
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    color: #F4F5F7;
-
+.main-container .description {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f4f5f7;
 }
 
 /* wraper division end */
 
-
 /* main body section start */
 
-.recent-work{
-    width: 100%;
-    background-color: #FFFFFF;
-    padding-top: 135px;
-    padding-right: 143.5px;
-    padding-left: 141px;
+.recent-work {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 135px;
+  padding-right: 143.5px;
+  padding-left: 141px;
 }
 
-.recent-work .recent-title{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    gap: 24px;
-}
-.recent-work .recent-title h3{
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    color: #091E42;
-    width: 30%;
-}
-.recent-title .horizontal{
-    width: 70%;
-}
-.recent-title .horizontal hr{
-    border: 1px solid #212121;
-    background-color: #212121;
-    width: 100%;
-}
-.all-projects{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    gap: 24px;
-    margin-top: 114px;
-}
-.all-projects .project:nth-child(1){
-    height: 448px;
-    width: 100%;
-    grid-column: span 3;
-    display: flex;
-}
-.multi-image{
-    height: 100%;
-    width: 60%;
-    background: url('./images/multiple.png');
-}
-.project-detail{
-    height: 100%;
-    width: 40%;
-    padding-left: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.project-detail h3{
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091E42;
-
-}
-.project-detail p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: #091E42;
-}
-.project-detail ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    
-}
-.project-detail > ul >li >a{
-    padding: 10px 12px;
-    background: #FFFFFF;
-    border: 1px solid #8993A4;  
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #091E42;
-
-}
-.project-detail a{
-    width: 130px;
-    height: 48px;
-    background: #F55800;
-    padding: 12px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-
-}
-.project-detail a:hover{
-    background: #ffffff;
-    color: #f55800;
-    border: 1px solid #f55800;
-}
-.project-detail a:focus{
-    color: #FFFFFF;
-    background: #F55800;
+.recent-work .recent-title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
 }
 
-.project-one{
-    display: flex;
-    flex-direction: column;
-}
-.project-one img{
-    width: 100%;
-    height: 90%;
-}
-.project-one a{
-    width: 100%;
-    height: 10%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background: #F55800;
-
-}
-.project-one a:hover{
-    background: #FFFFFF;
-    color: #F55800;
-    border: 1px solid #F55800;
-}
-.project-one a:focus{
-    color: #FFFFFF;
-    background: #F55800;
-}
-.all-projects .project:nth-child(3){
-    background-image: url("./images/project_two.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 162px;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.project-two h3{
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-
+.project-detail h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
 }
 
-.project-two p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.project-two ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    
-    
+.project-two h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
-.project-two ul li a{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.24);
-    color: #FFFFFF;
-    padding: 10px 12px;
-
-}
-.all-projects .project:nth-child(4){
-    background-image: url("./images/project_three.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 205px;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.project-three h3{
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-
-}
-.project-three p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #FFFFFF;
-
+.project-three h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
-
-.project-three ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    
-    
+.project-four h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
-.project-three ul li a{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.24);
-    color: #FFFFFF;
-    padding: 10px 12px;
-
+.project-five h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
-.all-projects .project:nth-child(5){
-    background-image: url("./images/project_five.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 162px;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.project-four h3{
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-
-}
-.project-four p{  
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #FFFFFF;
+.project-six h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
-.project-four ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    
-    
+.about-me .title-about {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  color: #f55800;
 }
 
-.project-four ul li a{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.24);
-    color: #FFFFFF;
-    padding: 10px 12px;
-
+.contact-main .intro-contact {
+  width: 35%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #262626;
 }
 
-
-.all-projects .project:nth-child(6){
-    background-image: url("./images/project_two.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 162px;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.project-five h3{
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-
+.recent-work .recent-title h3 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+  width: 30%;
 }
 
-.project-five p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.project-five  ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    
-    
+.recent-title .horizontal {
+  width: 70%;
 }
 
-.project-five  ul li a{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.24);
-    color: #FFFFFF;
-    padding: 10px 12px;
-
+.about-me hr {
+  margin-top: 139px;
+  margin-bottom: 146px;
+  border: 1px solid #fff;
+  background-color: #fff;
 }
 
-
-.all-projects .project:nth-child(7){
-    background-image: url("./images/project_three.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 205px;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.project-six h3{
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-
-}
-.project-six  p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #FFFFFF;
-
+.recent-title .horizontal hr {
+  border: 1px solid #212121;
+  background-color: #212121;
+  width: 100%;
 }
 
-
-.project-six  ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    
-    
+.all-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 114px;
 }
 
-.project-six  ul li a{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    background: rgba(255, 255, 255, 0.24);
-    color: #FFFFFF;
-    padding: 10px 12px;
-
+.all-projects .project {
+  height: 435px;
+  width: 100%;
 }
 
-.all-projects .project{
-    height: 435px;
-    width: 100%;
+.all-projects .project:nth-child(1) {
+  height: 448px;
+  width: 100%;
+  grid-column: span 3;
+  display: flex;
 }
+
+.multi-image {
+  height: 100%;
+  width: 60%;
+  background: url("./images/multiple.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.project-detail {
+  height: 100%;
+  width: 40%;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-detail p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #091e42;
+}
+
+.project-detail a:hover {
+  background: #fff;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.project-detail a:focus {
+  color: #fff;
+  background: #f55800;
+}
+
+.project-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-one img {
+  width: 100%;
+  height: 90%;
+}
+
+.project-one a:hover {
+  background: #fff;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.project-one a:focus {
+  color: #fff;
+  background: #f55800;
+}
+
+.all-projects .project:nth-child(3) {
+  background-image: url("./images/project_two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 162px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-two p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.all-projects .project:nth-child(4) {
+  background-image: url("./images/project_three.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 205px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-three p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.all-projects .project:nth-child(5) {
+  background-image: url("./images/project_five.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-four p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.all-projects .project:nth-child(6) {
+  background-image: url("./images/project_two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 162px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-five p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.all-projects .project:nth-child(7) {
+  background-image: url("./images/project_three.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 205px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-six p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
 /* main body section end */
 
 /* about me section start */
-.about-me{
-    height: 1337px;
-    width: 100%;
-    background-color: #262626;
-    margin-top: 130px;
-    background-image: url('./images/about_back.png');
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 40% 30%;
-    background-position-y: 99.7px;
-    padding-top: 130px;
-    padding-left: 142px;
-    padding-right: 142px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.about-me h3{
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 82px;
-    color: #F55800;
-
-}
-.about-me p{
-    width: 566px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    color: #F4F5F7;
-
+.about-me {
+  height: 1337px;
+  width: 100%;
+  background-color: #262626;
+  margin-top: 130px;
+  background-image: url("./images/about_back.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 40% 30%;
+  background-position-y: 99.7px;
+  padding-top: 130px;
+  padding-left: 142px;
+  padding-right: 142px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.about-me a{
-    width: 161px;
-    height: 48px;
-    padding: 12px;
-    background: #F55800;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-.about-me a:hover{
-    background: #ffffff;
-    color: #f55800;
-    border: 1px solid #f55800;
-    width: 171px;
-    height: 48px;
-}
-.about-me hr{
-    margin-top: 139px;
-    margin-bottom: 146px;
-    border: 1px solid #FFFFFF;
-    background-color: #ffffff;
+.about-me p {
+  width: 566px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f4f5f7;
 }
 
-.technology-list{
-    display: flex;
-    flex-direction: row;
-    gap: 176px;
-}
-.single-tech{
-    display: flex;
-    flex-direction: column;
-    gap: 44.73px;
-}
-.single-tech ul{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: flex-start;
-}
-.single-tech .tech-title{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-}
-.tech-title img{
-    width: 18px;
-    height: 18px;
+.about-me a:hover {
+  background: #fff;
+  color: #f55800;
+  border: 1px solid #f55800;
+  width: 171px;
+  height: 48px;
 }
 
-.tech-title h5{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+.technology-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
-.single-tech ul li{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    color: #FFFFFF;
+
+.single-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 44.73px;
+}
+
+.single-tech .tech-title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.tech-title img {
+  width: 18px;
+  height: 18px;
+}
+
+.tech-title h5 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.single-tech .tech-list li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
 }
 
 /* about me section end */
 
-
 /* contact-me section start */
 
-.contact-me{
-    width: 100%;
-    height: 686px;
-    
+.contact-me {
+  width: 100%;
+  height: 686px;
 }
 
-.contact-main{
-    height: 614px;
-    width: 100%;
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-top: 130px;
-    padding-left: 110px;
-    padding-right: 122px;
-    gap: 24px;
+.contact-main {
+  height: 614px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 130px;
+  padding-left: 110px;
+  padding-right: 122px;
+  gap: 24px;
 }
-.contact-main h3{
-    width: 35%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    color: #262626;
-}
+
 form {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    /* gap: 54px; */
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
-form textarea{
-    vertical-align: center;
-}
-.contact-footer{
-    height: 72px;
-    width: 100%;
-    border-top: 1px solid #DFE1E6;
+
+.contact-footer {
+  height: 72px;
+  width: 100%;
+  border-top: 1px solid #dfe1e6;
 }
 
 .input-group {
-    display: flex;
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+}
+
+.name-text {
+  width: 50%;
+}
+
+.input-group .name-text input {
+  height: 18px;
+  width: 298px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+  border: none;
+}
+
+.input-group .name-text hr {
+  margin-top: 14px;
+  margin-bottom: 39px;
+  background: #dbd8d7;
+  height: 1px;
+}
+
+.input-group .name-text input:focus {
+  outline: 1px solid #0c8ce9;
+}
+
+#email {
+  border: none;
+  width: 100%;
+}
+
+#email::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+}
+
+#email:focus {
+  outline: 1px solid #0c8ce9;
+}
+
+.form-seprator {
+  margin-top: 14px;
+  margin-bottom: 24px;
+  background: #dbd8d7;
+  height: 1px;
+}
+
+form textarea {
+  border: none;
+  padding: 12px;
+  height: 114px;
+}
+
+form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+form textarea:focus {
+  outline: 1px solid #0c8ce9;
+}
+
+form button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 132px;
+  height: 48px;
+  background: #f55800;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+form button:hover {
+  color: #f55800;
+  background: #fff;
+  border: 1px solid #f55800;
+}
+
+form button:focus {
+  color: #fff;
+  background: #f55800;
+}
+
+/* responsive part :start */
+@media all and (max-width: 1360px) {
+  .recent-work .recent-title h3 {
+    font-size: 30px;
+  }
+
+  /* contact me section start */
+  .contact-main .intro-contact {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  /* contact me section end */
+}
+
+@media all and (max-width: 1250px) {
+  /* recent works section :start */
+  .all-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .all-projects .project:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .project-detail {
+    gap: 20px;
+  }
+
+  .project-detail h3 {
+    font-size: 36px;
+    line-height: 39px;
+  }
+
+  .project-detail p {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  /* recent works section :end */
+  .recent-work .recent-title h3 {
+    font-size: 25px;
+  }
+
+  /* about me section :start */
+  .about-me {
+    background-size: 30% 20%;
+  }
+
+  /* about me section :end */
+
+  /* contact me section start */
+  .contact-main .intro-contact {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  /* contact me section end */
+}
+
+@media all and (max-width: 1024px) {
+  /* main upper section :end */
+  .main-nav {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .main-logo a {
+    font-size: 18px;
+  }
+
+  .main-body {
+    background-size: 30% 90%;
+    padding-left: 30px;
+    padding-top: 80px;
+    gap: 25px;
+  }
+
+  .main-container .intro {
+    font-size: 45px;
+    line-height: 72px;
+  }
+
+  .main-container .title {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .main-container .description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* main upper section :end */
+
+  /* recent works section :start */
+  .recent-work {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  /* multi -project start */
+  .all-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .all-projects .project:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .multi-image {
+    width: 50%;
+  }
+
+  .project-detail {
+    width: 50%;
     gap: 24px;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.input-group .name-text input{
-    height: 18px;
-    width: 298px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #979493;
-    border: none;
-}
-.input-group .name-text hr{
-    margin-top: 14px;
-    margin-bottom: 39px;
-    background: #DBD8D7;
-    height: 1px;
-}
-.input-group .name-text input:focus{
-    outline: 1px solid #0C8CE9;
+  }
+
+  .project-detail h3 {
+    font-size: 38px;
+    line-height: 39px;
+  }
+
+  .project-detail p {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .project-detail ul {
+    gap: 2px;
+  }
+
+  /* multi -project end */
+
+  /* recent works section :end */
+  .recent-work .recent-title h3 {
+    font-size: 20px;
+  }
+
+  /* about me section :start */
+  .about-me {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  .about-me p {
+    width: 420px;
+  }
+
+  /* about me section :end */
+
+  /* technology section :start */
+  .single-tech .tech-title {
+    gap: 8px;
+  }
+
+  .tech-title h5 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  /* technology section :end */
+
+  /* contact me section start */
+  .contact-main .intro-contact {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .contact-main {
+    padding-left: 60px;
+    padding-right: 72px;
+  }
+
+  /* contact me section end */
 }
 
-#email{
-    border: none; 
-}
-#email::placeholder{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #979493;
+@media all and (max-width: 768px) {
+  .main-nav {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
+  .main-logo a {
+    font-size: 15px;
+  }
+
+  .main-nav > nav > .all-nav > .single-nav .nav-link {
+    font-size: 13px;
+  }
+
+  .main-body {
+    background-size: 20% 80%;
+    padding-left: 20px;
+    padding-top: 40px;
+    gap: 25px;
+  }
+
+  .main-container .intro {
+    font-size: 38px;
+    line-height: 62px;
+  }
+
+  .main-container .title {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .main-container .description {
+    font-size: 14px;
+    line-height: 25px;
+    width: 500px;
+  }
+
+  /* recent works section :start */
+  .recent-work {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /* recent works section :end */
+  .recent-work .recent-title h3 {
+    font-size: 20px;
+    width: 40%;
+  }
+
+  .recent-title .horizontal {
+    width: 60%;
+  }
+
+  /* about me section :start */
+
+  .about-me p {
+    width: 340px;
+  }
+
+  /* about me section :end */
+
+  /* about me section :start */
+  .about-me {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  /* about me section :end */
+
+  /* technology section :start */
+  .single-tech .tech-title {
+    gap: 4px;
+  }
+
+  .tech-title h5 {
+    font-size: 25px;
+    line-height: 37px;
+  }
+
+  .single-tech .tech-list {
+    gap: 25px;
+  }
+
+  /* technology section :end */
+
+  /* contact me section start */
+  .contact-main .intro-contact {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .contact-main {
+    padding-left: 60px;
+    padding-right: 72px;
+  }
+
+  /* contact me section end */
 }
 
-#email:focus{
-    outline: 1px solid #0C8CE9;
-}
-.form-seprator{
-    margin-top: 14px;
-    margin-bottom: 24px;
-    background: #DBD8D7;
-    height: 1px;
-}
-form textarea{
-    border: none;
-    padding: 12px;
-    height: 114px;
-}
-form textarea::placeholder{
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 400;
+@media all and (max-width: 667px) {
+  .main-nav {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .main-logo a {
     font-size: 15px;
-    line-height: 24px;
-    color: #3C3A39;
-}
-form textarea:focus{
-    outline: 1px solid #0C8CE9;
-}
-form button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    gap: 10px;
-    width: 132px;
-    height: 48px;
-    background: #F55800;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+  }
+
+  .main-nav > nav > .all-nav > .single-nav .nav-link {
+    font-size: 13px;
+  }
+
+  .main-body {
+    background-size: 20% 80%;
+    padding-left: 20px;
+    padding-top: 40px;
+    gap: 25px;
+  }
+
+  .main-container .intro {
+    font-size: 38px;
+    line-height: 64px;
+  }
+
+  .main-container .title {
     font-size: 17px;
+    line-height: 28px;
+  }
+
+  .main-container .description {
+    font-size: 14px;
     line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    margin-top: 24px;
+    width: 350px;
+  }
 
-}
-form button:hover{
-    color: #f55800;
-    background: #ffffff;
-    border: 1px solid #f55800;
-}
-form button:focus{
-    color: #ffffff;
-    background: #f55800;
-}
+  /* recent works section :start */
+  .recent-work {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 
-.contact-footer ul{
+  /* recent works section :end */
+  .all-projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .all-projects .project:nth-child(1) {
+    grid-column: span 1;
     display: flex;
-    justify-content: center;
-    align-items: end;
-    gap: 21px;
-    
-    padding-top: 25px;
+  }
+
+  .multi-image {
+    width: 40%;
+  }
+
+  .project-detail {
+    width: 60%;
+  }
+
+  .project-detail > ul > li > a {
+    padding: 7px 7px;
+  }
+
+  .project-detail h3 {
+    font-size: 31px;
+    line-height: 47px;
+  }
+
+  .project-detail p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .project-detail ul {
+    grid-area: 5px;
+  }
+
+  .recent-work .recent-title h3 {
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .recent-title .horizontal {
+    width: 50%;
+  }
+
+  /* about me section :start */
+  .about-me {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-me .title-about {
+    font-size: 48px;
+    line-height: 76px;
+  }
+
+  .about-me p {
+    width: 350px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* about me section :end */
+
+  /* contact me section start */
+  .contact-main .intro-contact {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .contact-main {
+    padding-left: 20px;
+    padding-right: 32px;
+    padding-top: 110px;
+  }
+
+  /* contact me section end */
+}
+
+@media all and (max-width: 480px) {
+  .main-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-logo a {
+    font-size: 12px;
+  }
+
+  .main-nav nav .all-nav {
+    gap: 10px;
+  }
+
+  .main-nav > nav > .all-nav > .single-nav .nav-link {
+    font-size: 11px;
+  }
+
+  .main-body {
+    background-size: 20% 90%;
+    padding-left: 20px;
+    padding-top: 40px;
+    gap: 15px;
+  }
+
+  .main-container .intro {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .main-container .title {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .main-container .description {
+    font-size: 14px;
+    line-height: 24px;
+    width: 200px;
+  }
+
+  /* recent works section :start */
+  .recent-work {
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+  /* recent works section :end */
+  .project-detail h3 {
+    font-size: 25px;
+  }
+
+  .project-detail p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .project-detail ul {
+    gap: 2px;
+  }
+
+  .multi-image {
+    width: 25%;
+  }
+
+  .project-detail {
+    width: 75%;
+  }
+
+  .recent-work .recent-title h3 {
+    font-size: 15px;
+    width: 40%;
+  }
+
+  .recent-title .horizontal {
+    width: 60%;
+  }
+
+  /* about me section :start */
+  .about-me {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .about-me .title-about {
+    font-size: 40px;
+    line-height: 66px;
+  }
+
+  .about-me p {
+    width: 217px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* about me section :end */
+
+  /* technology section :start */
+  .single-tech .tech-title {
+    gap: 1px;
+  }
+
+  .tech-title h5 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .single-tech .tech-list {
+    gap: 16px;
+  }
+
+  .single-tech .tech-list li {
+    font-size: 14px;
+    line-height: 31px;
+  }
+
+  /* technology section :end */
+
+  /* contact me section start */
+  .contact-main .intro-contact {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .contact-main {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 110px;
+  }
+
+  /* contact me section end */
+}
+
+@media all and (max-width: 320px) {
+  .main-nav {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .main-logo a {
+    font-size: 8px;
+  }
+
+  .main-nav nav .all-navul {
+    gap: 6px;
+  }
+
+  .main-nav > nav > .all-nav > .single-nav .nav-link {
+    font-size: 8px;
+  }
+
+  .main-body {
+    background-size: 20% 90%;
+    padding-left: 10px;
+    padding-top: 18px;
+    gap: 8px;
+    background-position-y: 35px;
+  }
+
+  .main-container .intro {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .main-container .title {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .main-container .description {
+    font-size: 14px;
+    line-height: 17px;
+    width: 140px;
+  }
+
+  /* recent works section :start */
+  .recent-work {
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+  /* recent works section :end */
+  .project-detail h3 {
+    font-size: 20px;
+  }
+
+  .project-detail p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .project-detail ul {
+    gap: 3px;
+  }
+
+  .project-detail > ul > li > a {
+    padding: 6px 1px;
+    font-size: 12px;
+  }
+
+  .multi-image {
+    width: 25%;
+  }
+
+  .project-detail {
+    width: 75%;
+  }
+
+  .all-projects .project:nth-child(3) {
+    padding-top: 140px;
+  }
+
+  .all-projects .project:nth-child(4) {
+    padding-top: 140px;
+  }
+
+  .all-projects .project:nth-child(5) {
+    padding-top: 100px;
+  }
+
+  .all-projects .project:nth-child(6) {
+    padding-top: 140px;
+  }
+
+  .all-projects .project:nth-child(7) {
+    padding-top: 140px;
+  }
+
+  .recent-work .recent-title h3 {
+    font-size: 15px;
+    width: 60%;
+  }
+
+  .recent-title .horizontal {
+    width: 40%;
+  }
+
+  /* about me section :start */
+  .about-me {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .about-me .title-about {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .about-me p {
+    width: 200px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  /* about me section :end */
+
+  /* technology section :start */
+  .single-tech .tech-title {
+    gap: 1px;
+  }
+
+  .tech-title h5 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .single-tech .tech-list {
+    gap: 16px;
+  }
+
+  .single-tech .tech-list li {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  /* technology section :end */
+
+  /* contact me section start */
+
+  .contact-main {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 130px;
+    gap: 2px;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  .contact-main .intro-contact {
+    font-size: 8px;
+    line-height: 18px;
+    width: 30%;
+  }
+
+  .input-group {
+    grid-area: 4px;
+  }
+
+  /* contact me section end */
 }
