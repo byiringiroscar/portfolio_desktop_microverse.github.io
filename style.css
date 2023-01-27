@@ -53,6 +53,10 @@ ul li {
   color: #fff;
 }
 
+#mobile-icon {
+  display: none;
+}
+
 .main-nav nav .nav-ul {
   display: flex;
   width: 100%;
@@ -293,6 +297,10 @@ ul li {
   background: #f55800;
 }
 
+.view-project {
+  display: none;
+}
+
 .project-one a:hover {
   background: #fff;
   color: #f55800;
@@ -314,6 +322,8 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 30px;
+  justify-content: end;
 }
 
 .project-two h3 {
@@ -353,12 +363,14 @@ ul li {
 }
 
 .all-projects .project:nth-child(4) {
-  background-image: url("./images/project_three.png");
+  background-image: url("./images/project_two.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 205px;
+  padding-top: 162px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 30px;
+  justify-content: end;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -410,6 +422,8 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 30px;
+  justify-content: end;
 }
 
 .project-four h3 {
@@ -458,6 +472,8 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 30px;
+  justify-content: end;
 }
 
 .project-five h3 {
@@ -506,6 +522,8 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 30px;
+  justify-content: end;
 }
 
 .project-six h3 {
@@ -547,6 +565,10 @@ ul li {
 /* main body section end */
 
 /* about me section start */
+#about-my-self {
+  display: none;
+}
+
 .about-me {
   height: 1337px;
   width: 100%;
@@ -679,8 +701,9 @@ ul li {
   height: 614px;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 130px;
   padding-left: 110px;
   padding-right: 122px;
@@ -857,10 +880,6 @@ form button:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .all-projects .project:nth-child(1) {
-    grid-column: span 2;
-  }
-
   .project-detail {
     gap: 20px;
   }
@@ -910,23 +929,39 @@ form button:focus {
   .main-body {
     background-size: 30% 90%;
     padding-left: 30px;
-    padding-top: 80px;
+    padding-top: 70px;
     gap: 25px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: start;
+    background-image: url("./images/illustration-header-mobile.png");
+    background-position: bottom right;
+  }
+
+  .social-icon ul {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
   }
 
   .main-container .intro {
-    font-size: 45px;
-    line-height: 72px;
+    font-size: 39px;
+    line-height: 67px;
   }
 
   .main-container .title {
-    font-size: 26px;
-    line-height: 37px;
+    font-size: 34px;
+    line-height: 42px;
   }
 
   .main-container .description {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  .social-icon ul li img {
+    height: 30px;
+    width: 30px;
   }
 
   /* main upper section :end */
@@ -944,29 +979,24 @@ form button:focus {
 
   .all-projects .project:nth-child(1) {
     grid-column: span 2;
+    flex-direction: column;
+    width: 100%;
+    height: 738px;
   }
 
-  .multi-image {
-    width: 50%;
+  .project .multi-image {
+    height: 50%;
+    width: 100%;
   }
 
   .project-detail {
-    width: 50%;
-    gap: 24px;
-  }
-
-  .project-detail .mult-intro {
-    font-size: 38px;
-    line-height: 39px;
-  }
-
-  .project-detail p {
-    font-size: 19px;
-    line-height: 25px;
-  }
-
-  .project-detail ul {
-    gap: 2px;
+    padding-top: 24px;
+    width: 100%;
+    height: 65%;
+    padding-left: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 
   /* multi -project end */
@@ -1004,6 +1034,11 @@ form button:focus {
   .contact-main h3 {
     font-size: 26px;
     line-height: 38px;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
   }
 
   .contact-main {
@@ -1031,24 +1066,29 @@ form button:focus {
   .main-body {
     background-size: 20% 80%;
     padding-left: 20px;
-    padding-top: 40px;
+    padding-top: 70px;
     gap: 25px;
   }
 
   .main-container .intro {
-    font-size: 38px;
-    line-height: 62px;
+    font-size: 34px;
+    line-height: 58px;
   }
 
   .main-container .title {
-    font-size: 18px;
+    font-size: 28px;
     line-height: 34px;
   }
 
   .main-container .description {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 25px;
     width: 500px;
+  }
+
+  .social-icon ul li img {
+    height: 25px;
+    width: 25px;
   }
 
   /* recent works section :start */
@@ -1071,10 +1111,8 @@ form button:focus {
   .about-me {
     padding-left: 95px;
     padding-right: 9px;
-  }
-
-  .about-me p {
-    width: 340px;
+    background-image: url("./images/about-me.png");
+    background-position-y: 360px;
   }
 
   /* about me section :end */
@@ -1127,11 +1165,21 @@ form button:focus {
     font-size: 13px;
   }
 
+  #mobile-icon {
+    display: block;
+  }
+
+  .main-nav nav .nav-ul .nav-bar-li {
+    display: none;
+    background-color: green;
+  }
+
   .main-body {
     background-size: 20% 80%;
     padding-left: 20px;
-    padding-top: 40px;
-    gap: 25px;
+    padding-top: 100px;
+    gap: 35px;
+    overflow: hidden;
   }
 
   .main-container .intro {
@@ -1140,14 +1188,14 @@ form button:focus {
   }
 
   .main-container .title {
-    font-size: 17px;
+    font-size: 25px;
     line-height: 28px;
   }
 
   .main-container .description {
-    font-size: 14px;
-    line-height: 24px;
-    width: 350px;
+    font-size: 23px;
+    line-height: 34px;
+    width: 78%;
   }
 
   /* recent works section :start */
@@ -1167,12 +1215,139 @@ form button:focus {
     display: flex;
   }
 
+  /* card three :start */
+  .all-projects .project:nth-child(3) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .all-projects .project:nth-child(4) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .all-projects .project:nth-child(5) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .all-projects .project:nth-child(6) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .all-projects .project:nth-child(7) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .view-project {
+    width: 100%;
+    min-height: 48px;
+    background-color: #ff6b00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #view-project-id {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  .project-two p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-two h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-two ul {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-three p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-three h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-three ul {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-four p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-four h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-four ul {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-five p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-five h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-five ul {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-six p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-six h3 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-six ul {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* card three end */
   .multi-image {
-    width: 40%;
+    width: 100%;
   }
 
   .project-detail {
-    width: 60%;
+    width: 100%;
   }
 
   .project-detail > .project-tag > li > .project-tag-a {
@@ -1180,13 +1355,14 @@ form button:focus {
   }
 
   .project-detail .mult-intro {
-    font-size: 31px;
+    font-size: 38px;
     line-height: 47px;
   }
 
   .project-detail p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 23px;
+    width: 100%;
   }
 
   .project-detail ul {
@@ -1204,8 +1380,11 @@ form button:focus {
 
   /* about me section :start */
   .about-me {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 24px;
+    padding-right: 25px;
+    padding-top: 120px;
+    height: 1901px;
+    background-position-y: 242.4px;
   }
 
   .about-me h3 {
@@ -1214,26 +1393,80 @@ form button:focus {
   }
 
   .about-me p {
-    width: 350px;
+    width: 80%;
     font-size: 16px;
     line-height: 28px;
+  }
+
+  .about-me .about-hr {
+    margin-top: 201px;
+    margin-right: 16px;
+    margin-bottom: 137.6px;
+  }
+
+  .technology-list {
+    display: none;
+  }
+
+  #about-my-self {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Inter", serif;
+    margin-bottom: 100px;
+  }
+
+  #about-my-self .tool-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+
+  .tool-category h4 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+
+  .heading1::before {
+    content: url("./images/losange.png");
+    position: absolute;
+    left: -10px;
+  }
+
+  .heading2::before {
+    content: url("./images/square.png");
+    position: absolute;
+    left: -10px;
+  }
+
+  .heading3::before {
+    content: url("./images/circle.png");
+    position: absolute;
+    left: 1px;
+  }
+
+  .tool-category .list-heading .single-heading {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+    color: #fff;
   }
 
   /* about me section :end */
 
-  /* contact me section start */
-  .contact-main h3 {
-    font-size: 16px;
-    line-height: 28px;
-  }
-
   .contact-main {
-    padding-left: 20px;
-    padding-right: 32px;
-    padding-top: 110px;
+    padding-top: 60px;
   }
-
-  /* contact me section end */
 }
 
 @media all and (max-width: 480px) {
@@ -1255,26 +1488,31 @@ form button:focus {
   }
 
   .main-body {
-    background-size: 20% 90%;
-    padding-left: 20px;
-    padding-top: 40px;
+    padding-left: 10px;
+    padding-top: 100px;
     gap: 15px;
+    background-size: 50% 50%;
+    position: relative;
+  }
+
+  .social-icon ul {
+    gap: 10px;
   }
 
   .main-container .intro {
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 30px;
+    line-height: 39px;
   }
 
   .main-container .title {
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 35px;
   }
 
   .main-container .description {
-    font-size: 14px;
-    line-height: 24px;
-    width: 200px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 300px;
   }
 
   /* recent works section :start */
@@ -1298,34 +1536,38 @@ form button:focus {
 
   /* recent works section :end */
   .project-detail .mult-intro {
-    font-size: 25px;
+    font-size: 29px;
   }
 
   .project-detail p {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 18px;
   }
 
   .project-detail ul {
-    gap: 2px;
+    gap: 8px;
   }
 
   .project-detail > .project-tag > li > .project-tag-a {
-    padding: 6px 2px;
+    padding: 10px 12px;
   }
 
   .multi-image {
-    width: 25%;
+    width: 100%;
+    height: 30%;
   }
 
   .project-detail {
-    width: 75%;
+    width: 100%;
+    height: 70%;
+    gap: 37px;
   }
 
   /* about me section :start */
   .about-me {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-position-y: 249.7px;
   }
 
   .about-me h3 {
@@ -1334,7 +1576,6 @@ form button:focus {
   }
 
   .about-me p {
-    width: 217px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -1363,15 +1604,10 @@ form button:focus {
   /* technology section :end */
 
   /* contact me section start */
-  .contact-main h3 {
-    font-size: 16px;
-    line-height: 28px;
-  }
-
   .contact-main {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 110px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   /* contact me section end */
@@ -1384,7 +1620,7 @@ form button:focus {
   }
 
   .main-logo a {
-    font-size: 8px;
+    font-size: 16px;
   }
 
   .main-nav nav .nav-ul {
@@ -1396,27 +1632,26 @@ form button:focus {
   }
 
   .main-body {
-    background-size: 20% 90%;
+    background-size: 20% 40%;
     padding-left: 10px;
-    padding-top: 18px;
-    gap: 8px;
-    background-position-y: 35px;
+    padding-top: 100px;
+    gap: 18px;
   }
 
   .main-container .intro {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .main-container .title {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 19px;
+    line-height: 28px;
   }
 
   .main-container .description {
-    font-size: 14px;
-    line-height: 17px;
-    width: 140px;
+    font-size: 18px;
+    line-height: 22px;
+    width: 200px;
   }
 
   /* recent works section :start */
@@ -1427,12 +1662,18 @@ form button:focus {
 
   /* recent works section :end */
   .project-detail .mult-intro {
-    font-size: 20px;
+    font-size: 23px;
+  }
+
+  .project-detail {
+    width: 100%;
+    height: 70%;
+    gap: 40px;
   }
 
   .project-detail p {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .project-detail ul {
@@ -1440,16 +1681,13 @@ form button:focus {
   }
 
   .project-detail > .project-tag > li > .project-tag-a {
-    padding: 6px 1px;
+    padding: 6px 12px;
     font-size: 12px;
   }
 
   .multi-image {
-    width: 25%;
-  }
-
-  .project-detail {
-    width: 75%;
+    width: 100%;
+    height: 30%;
   }
 
   .all-projects .project:nth-child(3) {
@@ -1483,8 +1721,8 @@ form button:focus {
 
   /* about me section :start */
   .about-me {
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .about-me h3 {
@@ -1493,7 +1731,6 @@ form button:focus {
   }
 
   .about-me p {
-    width: 200px;
     font-size: 13px;
     line-height: 20px;
   }
@@ -1522,25 +1759,10 @@ form button:focus {
   /* technology section :end */
 
   /* contact me section start */
-  .contact-main h3 {
-    width: 30%;
-    font-size: 8px;
-    line-height: 18px;
-  }
-
   .contact-main {
-    padding-left: 1px;
-    padding-right: 1px;
-    padding-top: 130px;
-    gap: 2px;
-  }
-
-  form {
-    width: 70%;
-  }
-
-  .input-group {
-    grid-area: 4px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* contact me section end */
