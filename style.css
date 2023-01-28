@@ -864,14 +864,6 @@ form button:focus {
   .recent-work .recent-title .recent-header {
     font-size: 30px;
   }
-
-  /* contact me section start */
-  .contact-main h3 {
-    font-size: 38px;
-    line-height: 50px;
-  }
-
-  /* contact me section end */
 }
 
 @media all and (max-width: 1250px) {
@@ -905,14 +897,26 @@ form button:focus {
   }
 
   /* about me section :end */
+}
 
-  /* contact me section start */
-  .contact-main h3 {
-    font-size: 38px;
-    line-height: 50px;
+@media all and (min-width: 1024px) {
+  .contact-main {
+    display: flex;
+    flex-direction: row;
+    padding-left: 135px;
+    padding-right: 142px;
+    padding-top: 130px;
   }
 
-  /* contact me section end */
+  .contact-main h3 {
+    height: 100%;
+    padding-top: 1px;
+    display: block;
+  }
+
+  form {
+    height: 100%;
+  }
 }
 
 @media all and (max-width: 1024px) {
