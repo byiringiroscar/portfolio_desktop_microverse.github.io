@@ -51,6 +51,25 @@ ul li {
   align-items: center;
   text-align: center;
   color: #fff;
+  transform: translate(-50%, 50%);
+}
+
+.main-logo .logo-link:hover {
+  animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #mobile-icon {
@@ -838,12 +857,15 @@ form button {
   border: none;
   cursor: pointer;
   margin-top: 24px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 form button:hover {
   color: #f55800;
   background: #fff;
   border: 1px solid #f55800;
+  opacity: 0.6;
 }
 
 form button:focus {
