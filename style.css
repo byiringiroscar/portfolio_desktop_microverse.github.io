@@ -838,13 +838,17 @@ form button {
   border: none;
   cursor: pointer;
   margin-top: 24px;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 form button:hover {
   color: #f55800;
   background: #fff;
   border: 1px solid #f55800;
+  opacity: 0.6;
 }
+
 
 form button:focus {
   color: #fff;
