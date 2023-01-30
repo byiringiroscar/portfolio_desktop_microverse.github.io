@@ -86,7 +86,7 @@ After you're finished please remove all the comments and instructions!
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://byiringiroscar.github.io/portfolio_desktop_microverse.github.io/)
+- [Live Demo Link](https://github.com/byiringiroscar/portfolio_desktop_microverse)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
