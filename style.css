@@ -73,8 +73,6 @@ ul li {
   }
 }
 
-
-
 .main-nav nav .nav-ul {
   display: flex;
   width: 100%;
@@ -885,11 +883,9 @@ form button:focus {
   .recent-work .recent-title .recent-header {
     font-size: 30px;
   }
-  
 }
 
 @media all and (max-width: 1250px) {
- 
   /* recent works section :start */
   .all-projects {
     grid-template-columns: repeat(2, 1fr);
@@ -923,7 +919,6 @@ form button:focus {
 }
 
 @media all and (min-width: 1024px) {
-  
   .contact-main {
     display: flex;
     flex-direction: row;
@@ -944,7 +939,6 @@ form button:focus {
 }
 
 @media all and (max-width: 1024px) {
-  
   /* main upper section :end */
   .main-nav {
     padding-left: 80px;
@@ -1078,17 +1072,16 @@ form button:focus {
   /* contact me section end */
 }
 
-
 @media all and (max-width: 768px) {
-  .mobile-body.is-active{
+  .mobile-body.is-active {
     right: 0;
     display: block;
-    transition: 0.60s;
+    transition: 0.6s;
   }
-  .nav-ul .close-btn.is-active{
+
+  .nav-ul .close-btn.is-active {
     display: block;
   }
-  
 
   .main-logo a {
     font-size: 15px;
@@ -1097,7 +1090,8 @@ form button:focus {
   #mobile-icon {
     display: block;
   }
-  .mob-icon.is-active{
+
+  .mob-icon.is-active {
     display: block !important;
   }
 
@@ -1251,8 +1245,6 @@ form button:focus {
 }
 
 @media all and (max-width: 667px) {
-  
-
   .main-logo a {
     font-size: 15px;
   }
@@ -1566,8 +1558,6 @@ form button:focus {
 }
 
 @media all and (max-width: 480px) {
- 
-
   .main-logo a {
     font-size: 12px;
   }
@@ -1707,8 +1697,6 @@ form button:focus {
 }
 
 @media all and (max-width: 320px) {
-  
-
   .main-logo a {
     font-size: 16px;
   }
@@ -1858,50 +1846,45 @@ form button:focus {
   /* contact me section end */
 }
 
-
-
-
-
-
 /* mobile toggle section start */
-.mob-icon{
+.mob-icon {
   display: none !important;
 }
 
-
-.nav-ul .close-btn{
+.nav-ul .close-btn {
   display: none;
 }
 
-.mobile-body{
+.mobile-body {
   position: fixed;
   top: 72px;
   background-color: #3e3c3c;
   width: 100%;
   height: 100%;
-  z-index: 99; 
+  z-index: 99;
   right: 100%;
   display: none;
-  transition: 0.6s;
+  transition: all 3s;
 }
-/* .mobile-body.is-active{
-  right: 0;
-  display: block;
-  transition: 0.60s;
-} */
 
-.mobile-body .nav-ul{
+/* stylelint-disable-next-line no-descending-specificity */
+.mobile-body .nav-ul {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
   padding: 50px;
   gap: 20px;
 }
-.mobile-body .nav-ul li a{
+
+.mobile-body .nav-ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 10px;
+}
+
+.mobile-body .nav-ul li a {
   letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
   color: white;
-  font-size: 30px;
-  
 }
