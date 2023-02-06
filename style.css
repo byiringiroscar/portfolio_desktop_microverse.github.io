@@ -21,7 +21,8 @@ ul li {
 }
 
 .main-nav {
-  height: 10%;
+  /* height: 10%; */
+  height: 72px;
   width: 100%;
   background-color: #3e3c3c;
   padding-left: 150px;
@@ -72,9 +73,7 @@ ul li {
   }
 }
 
-#mobile-icon {
-  display: none;
-}
+
 
 .main-nav nav .nav-ul {
   display: flex;
@@ -96,7 +95,7 @@ ul li {
 }
 
 .main-body {
-  height: 90%;
+  height: calc(100vh - 72px);
   width: 100%;
   background-color: #1c1a19;
   background-image: url("./images/background1.png");
@@ -886,9 +885,11 @@ form button:focus {
   .recent-work .recent-title .recent-header {
     font-size: 30px;
   }
+  
 }
 
 @media all and (max-width: 1250px) {
+ 
   /* recent works section :start */
   .all-projects {
     grid-template-columns: repeat(2, 1fr);
@@ -922,6 +923,7 @@ form button:focus {
 }
 
 @media all and (min-width: 1024px) {
+  
   .contact-main {
     display: flex;
     flex-direction: row;
@@ -942,6 +944,7 @@ form button:focus {
 }
 
 @media all and (max-width: 1024px) {
+  
   /* main upper section :end */
   .main-nav {
     padding-left: 80px;
@@ -1075,11 +1078,17 @@ form button:focus {
   /* contact me section end */
 }
 
+
 @media all and (max-width: 768px) {
-  .main-nav {
-    padding-left: 50px;
-    padding-right: 50px;
+  .mobile-body.is-active{
+    right: 0;
+    display: block;
+    transition: 0.60s;
   }
+  .nav-ul .close-btn.is-active{
+    display: block;
+  }
+  
 
   .main-logo a {
     font-size: 15px;
@@ -1087,6 +1096,9 @@ form button:focus {
 
   #mobile-icon {
     display: block;
+  }
+  .mob-icon.is-active{
+    display: block !important;
   }
 
   .nav-bar-li {
@@ -1239,10 +1251,7 @@ form button:focus {
 }
 
 @media all and (max-width: 667px) {
-  .main-nav {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+  
 
   .main-logo a {
     font-size: 15px;
@@ -1557,10 +1566,7 @@ form button:focus {
 }
 
 @media all and (max-width: 480px) {
-  .main-nav {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+ 
 
   .main-logo a {
     font-size: 12px;
@@ -1701,10 +1707,7 @@ form button:focus {
 }
 
 @media all and (max-width: 320px) {
-  .main-nav {
-    padding-left: 1px;
-    padding-right: 1px;
-  }
+  
 
   .main-logo a {
     font-size: 16px;
@@ -1853,4 +1856,52 @@ form button:focus {
   }
 
   /* contact me section end */
+}
+
+
+
+
+
+
+/* mobile toggle section start */
+.mob-icon{
+  display: none !important;
+}
+
+
+.nav-ul .close-btn{
+  display: none;
+}
+
+.mobile-body{
+  position: fixed;
+  top: 72px;
+  background-color: #3e3c3c;
+  width: 100%;
+  height: 100%;
+  z-index: 99; 
+  right: 100%;
+  display: none;
+  transition: 0.6s;
+}
+/* .mobile-body.is-active{
+  right: 0;
+  display: block;
+  transition: 0.60s;
+} */
+
+.mobile-body .nav-ul{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 50px;
+  gap: 20px;
+}
+.mobile-body .nav-ul li a{
+  letter-spacing: 1px;
+  color: white;
+  font-size: 30px;
+  
 }
