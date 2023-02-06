@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-window.onload = function () {
+window.onload = () => {
   const mobileBtn = document.querySelector(".mob-icon");
   const mobileBtnClose = document.querySelector(".close-btn");
   const mobileBody = document.querySelector(".mobile-body");
