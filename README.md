@@ -186,8 +186,8 @@ If you like this project you can buy me cofee here [link](https://www.linkedin.c
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- [ ] **[I would like to thank microverse for make this thing happen]**
-- [ ] **[I would like to take my coding partner]**
+- **I would like to thank microverse for make this thing happen**
+- **I would like to take my coding partner**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
