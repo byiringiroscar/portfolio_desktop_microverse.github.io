@@ -50,6 +50,7 @@ After you're finished please remove all the comments and instructions!
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -179,6 +180,14 @@ Example command:
 
 
 If you like this project you can buy me cofee here [link](https://www.linkedin.com/in/oscar-byiringiro-9baa8313a/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- **I would like to thank microverse for make this thing happen**
+- **I would like to take my coding partner**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

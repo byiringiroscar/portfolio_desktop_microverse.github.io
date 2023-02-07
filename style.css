@@ -21,7 +21,8 @@ ul li {
 }
 
 .main-nav {
-  height: 10%;
+  /* height: 10%; */
+  height: 72px;
   width: 100%;
   background-color: #3e3c3c;
   padding-left: 150px;
@@ -72,8 +73,12 @@ ul li {
   }
 }
 
-#mobile-icon {
-  display: none;
+.mobile-body .nav-ul {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
 }
 
 .main-nav nav .nav-ul {
@@ -96,7 +101,7 @@ ul li {
 }
 
 .main-body {
-  height: 90%;
+  height: calc(100vh - 72px);
   width: 100%;
   background-color: #1c1a19;
   background-image: url("./images/background1.png");
@@ -1076,9 +1081,14 @@ form button:focus {
 }
 
 @media all and (max-width: 768px) {
-  .main-nav {
-    padding-left: 50px;
-    padding-right: 50px;
+  .mobile-body.is-active {
+    right: 0;
+    display: block;
+    transition: 0.6s;
+  }
+
+  .nav-ul .close-btn.is-active {
+    display: block;
   }
 
   .main-logo a {
@@ -1087,6 +1097,10 @@ form button:focus {
 
   #mobile-icon {
     display: block;
+  }
+
+  .mob-icon.is-active {
+    display: block !important;
   }
 
   .nav-bar-li {
@@ -1239,11 +1253,6 @@ form button:focus {
 }
 
 @media all and (max-width: 667px) {
-  .main-nav {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .main-logo a {
     font-size: 15px;
   }
@@ -1557,11 +1566,6 @@ form button:focus {
 }
 
 @media all and (max-width: 480px) {
-  .main-nav {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   .main-logo a {
     font-size: 12px;
   }
@@ -1579,7 +1583,8 @@ form button:focus {
     padding-top: 100px;
     gap: 15px;
     background-size: 50% 50%;
-    position: relative;
+
+    /* position: relative; */
   }
 
   .social-icon ul {
@@ -1701,11 +1706,6 @@ form button:focus {
 }
 
 @media all and (max-width: 320px) {
-  .main-nav {
-    padding-left: 1px;
-    padding-right: 1px;
-  }
-
   .main-logo a {
     font-size: 16px;
   }
@@ -1853,4 +1853,40 @@ form button:focus {
   }
 
   /* contact me section end */
+}
+
+/* mobile toggle section start */
+.mob-icon {
+  display: none !important;
+}
+
+.nav-ul .close-btn {
+  display: none;
+}
+
+.mobile-body {
+  position: fixed;
+  top: 72px;
+  background-color: #3e3c3c;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  right: 100%;
+  display: none;
+  transition: all 3s;
+}
+
+.mobile-body .nav-ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 10px;
+}
+
+.mobile-body .nav-ul li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  letter-spacing: 1px;
 }
