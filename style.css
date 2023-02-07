@@ -73,6 +73,14 @@ ul li {
   }
 }
 
+.mobile-body .nav-ul {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}
+
 .main-nav nav .nav-ul {
   display: flex;
   width: 100%;
@@ -1575,7 +1583,8 @@ form button:focus {
     padding-top: 100px;
     gap: 15px;
     background-size: 50% 50%;
-    position: relative;
+
+    /* position: relative; */
   }
 
   .social-icon ul {
@@ -1867,24 +1876,17 @@ form button:focus {
   transition: all 3s;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
-.mobile-body .nav-ul {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  gap: 20px;
-}
-
 .mobile-body .nav-ul li {
   border-bottom: 1px solid #6f6c6b;
   padding: 10px;
 }
 
 .mobile-body .nav-ul li a {
-  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: white;
+  color: #fff5e1;
+  letter-spacing: 1px;
 }
