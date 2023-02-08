@@ -1,4 +1,8 @@
 window.onload = () => {
+  const firstSection = document.querySelector('.wrapper');
+  const recentSection = document.querySelector('.recent-work');
+  const aboutSection = document.querySelector('.about-me');
+  const contactSection = document.querySelector('.contact-me');
   const mobileBtn = document.querySelector('.mob-icon');
   const mobileBtnClose = document.querySelector('.close-btn');
   const mobileBody = document.querySelector('.mobile-body');
@@ -56,6 +60,10 @@ window.onload = () => {
       modalDescription.textContent = project[i].description;
       ModalImage.src = projImage;
       containerModal.style.display = 'flex';
+      firstSection.classList.add('blur');
+      recentSection.classList.add('blur');
+      aboutSection.classList.add('blur');
+      contactSection.classList.add('blur');
     });
   }
 
@@ -75,5 +83,9 @@ window.onload = () => {
   });
   modalclosebtn.addEventListener('click', () => {
     containerModal.style.display = 'none';
+    firstSection.classList.remove('blur');
+    recentSection.classList.remove('blur');
+    aboutSection.classList.remove('blur');
+    contactSection.classList.remove('blur');
   });
 };
