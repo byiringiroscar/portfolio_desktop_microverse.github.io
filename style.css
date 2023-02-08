@@ -52,7 +52,6 @@ ul li {
   align-items: center;
   text-align: center;
   color: #fff;
-  transform: translate(-50%, 50%);
 }
 
 .main-logo .logo-link:hover {
@@ -886,6 +885,132 @@ form button:focus {
   padding-top: 25px;
 }
 
+/* model and pop part */
+.container-modal{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 72px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  position: fixed;
+  padding: 20px;
+  display: none;
+}
+.container-modal .modal{
+  height: 89%;
+  width: 80%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  background: #FFFFFF;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.modal-title{
+  display: flex;
+  justify-content: space-between;
+}
+.modal-title img{
+  cursor: pointer;
+}
+.modal-title h3{
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+
+}
+.modal-tag{
+  display: flex;
+  gap: 28px;
+  margin-top: 4px;
+}
+.modal-tag li{
+  padding: 10px 12px;
+  border: 1px solid #979493;
+  cursor: pointer;
+}
+.modal-tag li a{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3C3A39;
+  
+
+}
+.modal-tag li:hover{
+  background-color: #f55800;
+  color: white;
+  border: none;
+}
+.modal-desc{
+  display: flex;
+  gap: 25px;
+  height: 75%;
+}
+.modal-desc img{
+  height: 100%;
+  width: 50%;
+}
+.modal-desc .single-desc{
+  width: 50%;
+}
+.single-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.single-desc p{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+
+}
+.modal-btn-view{
+  display: flex;
+  gap: 7px;
+}
+.modal-btn-view a{
+  padding: 12px;
+  gap: 12px;
+  max-width: 154px;
+  height: 48px;
+  background: #F55800;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+
+}
+.modal-btn-view a:hover{
+  background-color: gray;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+
 /* responsive part :start */
 @media all and (max-width: 1360px) {
   .recent-work .recent-title .recent-header {
@@ -1081,6 +1206,39 @@ form button:focus {
 }
 
 @media all and (max-width: 768px) {
+  /* modal and pop part start */
+  .container-modal .modal{
+    justify-content: space-between;
+    top: 60px;
+  }
+  .modal-desc{
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    gap: 1px;
+    margin-top: 2px;
+    
+  }
+  .modal-tag{
+    gap: 8px;
+  }
+  .modal-desc img{
+    width: 100%;
+    height: 200px;
+  }
+  .modal-desc .single-desc{
+    width: 100%;
+  }
+  .single-desc p{
+    line-height: 20px;
+  }
+  .modal-btn-view{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  /* modal and pop part end */
   .mobile-body.is-active {
     right: 0;
     display: block;
@@ -1566,8 +1724,31 @@ form button:focus {
 }
 
 @media all and (max-width: 480px) {
+  /* modal pop start */
+
+  .container-modal .modal{
+    width: 90%;
+    gap: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .modal-btn-view a{
+    line-height: 1px;
+    gap: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 0px;
+    justify-content: space-between;
+  }
+  .modal-btn-view{
+    gap: 2px;
+  }
+ 
+
   .main-logo a {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .main-nav nav .nav-ul {
@@ -1706,12 +1887,71 @@ form button:focus {
 }
 
 @media all and (max-width: 320px) {
+  /* modal and pop part */
+  .container-modal .modal{
+    height: 80%;
+    justify-content: space-between;
+    gap: 1px;
+  }
+  .modal-title h3{
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .modal-tag{
+    gap: 3px;
+    margin-top: 0px;
+  }
+  .modal-tag li{
+    padding: 3px 3px;
+  }
+  .modal-tag li a{
+    font-size: 12px;
+  }
+  .modal-desc{
+    height: 70%;
+    position: static;
+    justify-content: space-between;
+    gap: 1px;
+  }
+  .modal-desc img{
+    height: 200px;
+  }
+  .single-desc{
+    width: 100%;
+  }
+  .single-desc p{
+    height: auto;
+    line-height: 12px;
+    font-size: 12px;
+  }
+  .modal-btn-view{
+    position: static;
+    margin-top: 8px;
+  }
+  .modal-btn-view a{
+    font-size: 12px;
+    height: 38px;
+  }
+  /* modal pop end */
+  .main-logo{
+    justify-content: center;
+  }
   .main-logo a {
-    font-size: 16px;
+    font-size: 9px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .main-nav nav .nav-ul {
     gap: 6px;
+    justify-content: center;
   }
 
   .main-nav > nav > .nav-ul > li a {
