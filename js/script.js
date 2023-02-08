@@ -48,7 +48,7 @@ window.onload = () => {
     },
   };
 
-  for (let i = 0; i < viewProject.length; i++) {
+  for (let i = 0; i < viewProject.length; i += 1) {
     viewProject[i].addEventListener('click', (event) => {
       event.preventDefault();
       const projImage = project[i].image;
