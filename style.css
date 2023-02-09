@@ -52,11 +52,14 @@ ul li {
   align-items: center;
   text-align: center;
   color: #fff;
-  transform: translate(-50%, 50%);
 }
 
 .main-logo .logo-link:hover {
   animation: rotate 1s linear;
+}
+
+.blur {
+  filter: blur(2px);
 }
 
 @keyframes rotate {
@@ -773,7 +776,7 @@ form {
 
 .input-group .name-text input {
   height: 18px;
-  width: 298px;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -823,10 +826,15 @@ form {
   height: 1px;
 }
 
+.message-text {
+  width: 100%;
+}
+
 form textarea {
   border: none;
   padding: 12px;
-  height: 114px;
+  height: 100%;
+  width: 100%;
 }
 
 form textarea::placeholder {
@@ -840,6 +848,7 @@ form textarea::placeholder {
 
 form textarea:focus {
   outline: 1px solid #0c8ce9;
+  border: 1px solid #0c8ce9;
 }
 
 form button {
@@ -884,6 +893,153 @@ form button:focus {
   align-items: end;
   gap: 21px;
   padding-top: 25px;
+}
+
+.field small {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+/* contact section end */
+
+/* model and pop part */
+.container-modal {
+  height: 100vh;
+  width: 100vw;
+  top: 42px;
+  justify-content: center;
+  padding-top: 50px;
+  position: fixed;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.container-modal .modal {
+  height: 89%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  background: #fff;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title img {
+  cursor: pointer;
+}
+
+.modal-title h3 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-tag {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.modal-tag .single-modal-tag {
+  padding: 10px 12px;
+  border: 1px solid #979493;
+  cursor: pointer;
+}
+
+.modal-tag .single-modal-tag .single-tag-item {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3c3a39;
+}
+
+.modal-tag li:hover {
+  background-color: #f55800;
+  color: white;
+  border: none;
+}
+
+.modal-desc-mobile {
+  display: none;
+}
+
+.modal-desc {
+  display: flex;
+  gap: 25px;
+  height: 75%;
+}
+
+.modal-desc img {
+  height: 100%;
+  width: 50%;
+}
+
+.single-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-desc .single-desc {
+  width: 50%;
+}
+
+.single-desc p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.modal-btn-view {
+  display: flex;
+  gap: 7px;
+}
+
+.modal-btn-view .modal-btn-see {
+  padding: 12px;
+  gap: 5px;
+  max-width: 154px;
+  height: 48px;
+  background: #f55800;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.modal-btn-view a:hover {
+  background-color: gray;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
 
 /* responsive part :start */
@@ -1081,6 +1237,95 @@ form button:focus {
 }
 
 @media all and (max-width: 768px) {
+  /* modal and pop part start */
+  .modal-desc {
+    display: none;
+  }
+
+  .modal-title.desktop {
+    display: none;
+  }
+
+  .modal-tag.desktop {
+    display: none;
+  }
+
+  .modal-desc-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+    height: 100%;
+  }
+
+  .modal-desc-mobile .main-content-mobile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .modal-desc-mobile .modal-main-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-tag .single-modal-tag {
+    padding: 6px 9px;
+  }
+
+  .modal-main-desc img {
+    height: 200px;
+  }
+
+  .modal-main-desc p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #344563;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .modal-desc-mobile .modal-btn-view {
+    max-height: 48px;
+    width: 100%;
+    gap: 19px;
+  }
+
+  .container-modal .modal {
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .modal-tag {
+    gap: 8px;
+  }
+
+  .modal-btn-view .modal-mobile-btn {
+    padding: 12px;
+    gap: 12px;
+    width: 50%;
+    background: #f55800;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  /* modal and pop part end */
   .mobile-body.is-active {
     right: 0;
     display: block;
@@ -1253,6 +1498,41 @@ form button:focus {
 }
 
 @media all and (max-width: 667px) {
+  /* pop section start */
+
+  .modal-desc-mobile .main-content-mobile {
+    gap: 4px;
+  }
+
+  .modal-main-desc {
+    padding-bottom: 5px;
+  }
+
+  .modal-btn-view .modal-mobile-btn {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .modal-desc-mobile .modal-title .modal-title-single {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .modal-main-desc img {
+    height: 140px;
+  }
+
+  .modal-tag .single-modal-tag {
+    padding: 6px 8px;
+  }
+
+  .modal-main-desc p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  /* pop css end */
+
   .main-logo a {
     font-size: 15px;
   }
@@ -1267,7 +1547,6 @@ form button:focus {
 
   .main-nav nav .nav-ul .nav-bar-li {
     display: none;
-    background-color: green;
   }
 
   .main-body {
@@ -1566,8 +1845,58 @@ form button:focus {
 }
 
 @media all and (max-width: 480px) {
+  /* modal pop start */
+  .container-modal {
+    padding-top: 10px;
+  }
+
+  .container-modal .modal {
+    width: 90%;
+    gap: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal-btn-view a {
+    line-height: 1px;
+    gap: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 0;
+    justify-content: space-between;
+  }
+
+  .modal-desc img {
+    max-height: 150px;
+  }
+
+  .modal-title h3 {
+    font-size: 20px;
+  }
+
+  .modal-tag .single-modal-tag {
+    padding: 5px 4px;
+  }
+
+  .modal-main-desc p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .modal-btn-view .modal-mobile-btn {
+    font-size: 10px;
+  }
+
+  .modal-btn-view {
+    gap: 2px;
+  }
+
+  /* modal popup end */
+
   .main-logo a {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .main-nav nav .nav-ul {
@@ -1583,8 +1912,6 @@ form button:focus {
     padding-top: 100px;
     gap: 15px;
     background-size: 50% 50%;
-
-    /* position: relative; */
   }
 
   .social-icon ul {
@@ -1706,12 +2033,94 @@ form button:focus {
 }
 
 @media all and (max-width: 320px) {
+  /* modal and pop part */
+  .container-modal {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .container-modal .modal {
+    height: 80%;
+    justify-content: space-between;
+    gap: 1px;
+  }
+
+  .modal-desc-mobile .modal-title .modal-title-single {
+    font-size: 19px;
+    line-height: 15px;
+  }
+
+  .modal-tag {
+    gap: 3px;
+    margin-top: 0;
+  }
+
+  .modal-main-desc p {
+    line-height: 12px;
+    font-size: 13px;
+  }
+
+  .modal-tag li {
+    padding: 3px 3px;
+  }
+
+  .modal-tag li .single-tag-item {
+    font-size: 12px;
+  }
+
+  .modal-tag .single-modal-tag {
+    padding: 2px 3px;
+  }
+
+  .modal-tag .single-modal-tag .single-tag-item {
+    font-size: 10px;
+  }
+
+  .modal-main-desc img {
+    height: 200px;
+  }
+
+  .single-desc {
+    width: 100%;
+  }
+
+  .single-desc p {
+    height: auto;
+    line-height: 12px;
+    font-size: 12px;
+  }
+
+  .modal-btn-view {
+    position: static;
+    margin-top: 8px;
+  }
+
+  .modal-btn-view .modal-mobile-btn {
+    padding: 2px;
+    gap: 1px;
+  }
+
+  /* modal pop end */
+  .main-logo {
+    justify-content: center;
+  }
+
   .main-logo a {
-    font-size: 16px;
+    font-size: 9px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .main-nav nav .nav-ul {
     gap: 6px;
+    justify-content: center;
   }
 
   .main-nav > nav > .nav-ul > li a {
