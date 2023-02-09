@@ -930,7 +930,7 @@ form button:focus {
   padding-right: 24px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
 }
 
 .modal-title {
@@ -953,7 +953,7 @@ form button:focus {
 
 .modal-tag {
   display: flex;
-  gap: 28px;
+  gap: 12px;
   margin-top: 4px;
 }
 
@@ -1242,11 +1242,28 @@ form button:focus {
     display: none;
   }
 
+  .modal-title.desktop {
+    display: none;
+  }
+
+  .modal-tag.desktop {
+    display: none;
+  }
+
   .modal-desc-mobile {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2px;
+    height: 100%;
+  }
+
+  .modal-desc-mobile .main-content-mobile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 24px;
   }
 
@@ -1262,15 +1279,16 @@ form button:focus {
   }
 
   .modal-main-desc img {
-    height: 160px;
+    height: 200px;
   }
 
   .modal-main-desc p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
     color: #344563;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .modal-desc-mobile .modal-btn-view {
@@ -1281,7 +1299,7 @@ form button:focus {
 
   .container-modal .modal {
     justify-content: space-between;
-    padding-top: 0;
+    padding-top: 10px;
     padding-bottom: 10px;
   }
 
@@ -1481,8 +1499,9 @@ form button:focus {
 
 @media all and (max-width: 667px) {
   /* pop section start */
-  .modal-main-desc img {
-    height: 160px;
+
+  .modal-desc-mobile .main-content-mobile {
+    gap: 4px;
   }
 
   .modal-main-desc {
@@ -1494,13 +1513,25 @@ form button:focus {
     padding: 5px;
   }
 
+  .modal-desc-mobile .modal-title .modal-title-single {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .modal-main-desc img {
+    height: 140px;
+  }
+
   .modal-tag .single-modal-tag {
     padding: 6px 8px;
   }
 
   .modal-main-desc p {
-    font-size: 13px;
+    font-size: 17px;
+    line-height: 25px;
   }
+
+  /* pop css end */
 
   .main-logo a {
     font-size: 15px;
@@ -1516,7 +1547,6 @@ form button:focus {
 
   .main-nav nav .nav-ul .nav-bar-li {
     display: none;
-    background-color: green;
   }
 
   .main-body {
@@ -1850,6 +1880,11 @@ form button:focus {
     padding: 5px 4px;
   }
 
+  .modal-main-desc p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   .modal-btn-view .modal-mobile-btn {
     font-size: 10px;
   }
@@ -2010,14 +2045,19 @@ form button:focus {
     gap: 1px;
   }
 
-  .modal-title h3 {
-    font-size: 16px;
-    line-height: 13px;
+  .modal-desc-mobile .modal-title .modal-title-single {
+    font-size: 19px;
+    line-height: 15px;
   }
 
   .modal-tag {
     gap: 3px;
     margin-top: 0;
+  }
+
+  .modal-main-desc p {
+    line-height: 12px;
+    font-size: 13px;
   }
 
   .modal-tag li {
@@ -2037,7 +2077,7 @@ form button:focus {
   }
 
   .modal-main-desc img {
-    height: 130px;
+    height: 200px;
   }
 
   .single-desc {

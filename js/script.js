@@ -8,9 +8,12 @@ window.onload = () => {
   const mobileBody = document.querySelector('.mobile-body');
   const navMain = document.querySelector('.main-nav');
   const modalclosebtn = document.querySelector('#modal-close-btn');
+  const modalcloseMobilebtn = document.querySelector('#modal-close-btn-mobile');
+
   const containerModal = document.querySelector('.container-modal');
   const viewProject = document.querySelectorAll('.modal-link');
   const modalTitle = document.querySelector('.modal-title h3');
+  const modalTitleMobile = document.querySelector('.modal-desc-mobile .modal-title h3');
   const modalDescription = document.querySelector('.single-desc p');
   const ModalImage = document.querySelector('.modal-desc img');
   const MobileModalImage = document.querySelector('.modal-main-desc img');
@@ -59,6 +62,7 @@ window.onload = () => {
       event.preventDefault();
       const projImage = project[i].image;
       modalTitle.textContent = project[i].title;
+      modalTitleMobile.textContent = project[i].title;
       modalDescription.textContent = project[i].description;
       ModalImage.src = projImage;
       MobileModalDescription.textContent = project[i].description;
@@ -86,6 +90,13 @@ window.onload = () => {
     document.querySelector('.logo-link').style.display = 'block';
   });
   modalclosebtn.addEventListener('click', () => {
+    containerModal.style.display = 'none';
+    firstSection.classList.remove('blur');
+    recentSection.classList.remove('blur');
+    aboutSection.classList.remove('blur');
+    contactSection.classList.remove('blur');
+  });
+  modalcloseMobilebtn.addEventListener('click', () => {
     containerModal.style.display = 'none';
     firstSection.classList.remove('blur');
     recentSection.classList.remove('blur');
