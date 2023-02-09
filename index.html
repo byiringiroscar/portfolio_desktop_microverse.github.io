@@ -233,16 +233,23 @@
     <section id="contact-sec" class="contact-me">
         <div class="contact-main">
             <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-            <form action="https://formspree.io/f/myyazqal" method="post">
-                <div class="input-group">
-                    <div class="name-text">
+            <form action="https://formspree.io/f/myyazqal" method="post" id="signup">
+                <div class="input-group ">
+                    <div class="name-text field">
                         <input type="text" name="name" id="name" placeholder="Full Name">
+                        <small></small>
                         <hr>
                     </div>
                 </div>
-                <input type="email" name="email" id="email" placeholder="Email address">
+                <div class="email-text field">
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                    <small></small>
+                </div>
                 <hr class="form-seprator">
-                <textarea name="message" id="message" placeholder="Hello Oscar. I would like to get in touch with you"></textarea>
+                <div class="message-text field">
+                    <textarea name="message" id="message" placeholder="Hello Oscar. I would like to get in touch with you"></textarea>
+                    <small></small>
+                </div>
                 <button type="submit">Get in touch</button>
             </form>
         </div>
