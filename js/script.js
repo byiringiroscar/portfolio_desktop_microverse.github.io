@@ -13,6 +13,8 @@ window.onload = () => {
   const modalTitle = document.querySelector('.modal-title h3');
   const modalDescription = document.querySelector('.single-desc p');
   const ModalImage = document.querySelector('.modal-desc img');
+  const MobileModalImage = document.querySelector('.modal-main-desc img');
+  const MobileModalDescription = document.querySelector('.modal-main-desc p');
 
   const project = {
     0: {
@@ -59,6 +61,8 @@ window.onload = () => {
       modalTitle.textContent = project[i].title;
       modalDescription.textContent = project[i].description;
       ModalImage.src = projImage;
+      MobileModalDescription.textContent = project[i].description;
+      MobileModalImage.src = projImage;
       containerModal.style.display = 'flex';
       firstSection.classList.add('blur');
       recentSection.classList.add('blur');

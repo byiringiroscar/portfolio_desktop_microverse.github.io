@@ -907,7 +907,7 @@ form button:focus {
 .container-modal {
   height: 100vh;
   width: 100vw;
-  top: 72px;
+  top: 42px;
   justify-content: center;
   padding-top: 50px;
   position: fixed;
@@ -978,6 +978,10 @@ form button:focus {
   border: none;
 }
 
+.modal-desc-mobile {
+  display: none;
+}
+
 .modal-desc {
   display: flex;
   gap: 25px;
@@ -1015,15 +1019,15 @@ form button:focus {
 
 .modal-btn-view .modal-btn-see {
   padding: 12px;
-  gap: 12px;
+  gap: 5px;
   max-width: 154px;
   height: 48px;
   background: #f55800;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 19px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1234,41 +1238,73 @@ form button:focus {
 
 @media all and (max-width: 768px) {
   /* modal and pop part start */
-  .container-modal .modal {
-    justify-content: space-between;
-    top: 60px;
+  .modal-desc {
+    display: none;
   }
 
-  .modal-desc {
-    flex-direction: column;
+  .modal-desc-mobile {
     width: 100%;
-    height: 70%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 1px;
-    margin-top: 2px;
+    gap: 24px;
+  }
+
+  .modal-desc-mobile .modal-main-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-tag .single-modal-tag {
+    padding: 6px 9px;
+  }
+
+  .modal-main-desc img {
+    height: 160px;
+  }
+
+  .modal-main-desc p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #344563;
+  }
+
+  .modal-desc-mobile .modal-btn-view {
+    max-height: 48px;
+    width: 100%;
+    gap: 19px;
+  }
+
+  .container-modal .modal {
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
 
   .modal-tag {
     gap: 8px;
   }
 
-  .modal-desc img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .modal-desc .single-desc {
-    width: 100%;
-  }
-
-  .single-desc p {
-    line-height: 20px;
-  }
-
-  .modal-btn-view {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
+  .modal-btn-view .modal-mobile-btn {
+    padding: 12px;
+    gap: 12px;
+    width: 50%;
+    background: #f55800;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
   }
 
   /* modal and pop part end */
@@ -1444,6 +1480,28 @@ form button:focus {
 }
 
 @media all and (max-width: 667px) {
+  /* pop section start */
+  .modal-main-desc img {
+    height: 160px;
+  }
+
+  .modal-main-desc {
+    padding-bottom: 5px;
+  }
+
+  .modal-btn-view .modal-mobile-btn {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .modal-tag .single-modal-tag {
+    padding: 6px 8px;
+  }
+
+  .modal-main-desc p {
+    font-size: 13px;
+  }
+
   .main-logo a {
     font-size: 15px;
   }
@@ -1789,12 +1847,18 @@ form button:focus {
   }
 
   .modal-tag .single-modal-tag {
-    padding: 5px 7px;
+    padding: 5px 4px;
+  }
+
+  .modal-btn-view .modal-mobile-btn {
+    font-size: 10px;
   }
 
   .modal-btn-view {
     gap: 2px;
   }
+
+  /* modal popup end */
 
   .main-logo a {
     font-size: 10px;
@@ -1972,15 +2036,8 @@ form button:focus {
     font-size: 10px;
   }
 
-  .modal-desc {
-    height: 70%;
-    position: static;
-    justify-content: space-between;
-    gap: 1px;
-  }
-
-  .modal-desc img {
-    height: 200px;
+  .modal-main-desc img {
+    height: 130px;
   }
 
   .single-desc {
@@ -1998,10 +2055,9 @@ form button:focus {
     margin-top: 8px;
   }
 
-  .modal-btn-view .modal-btn-see {
-    font-size: 8px;
-    height: 10px;
-    padding: 12px;
+  .modal-btn-view .modal-mobile-btn {
+    padding: 2px;
+    gap: 1px;
   }
 
   /* modal pop end */
