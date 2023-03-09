@@ -11,7 +11,6 @@ window.onload = () => {
   const modalcloseMobilebtn = document.querySelector('#modal-close-btn-mobile');
 
   const containerModal = document.querySelector('.container-modal');
-  const viewProject = document.querySelectorAll('.modal-link');
   const modalTitle = document.querySelector('.modal-title h3');
   const modalTitleMobile = document.querySelector(
     '.modal-desc-mobile .modal-title h3',
@@ -20,52 +19,53 @@ window.onload = () => {
   const ModalImage = document.querySelector('.modal-desc img');
   const MobileModalImage = document.querySelector('.modal-main-desc img');
   const MobileModalDescription = document.querySelector('.modal-main-desc p');
+  const projectContainer = document.querySelector('.all-projects');
+  const seeLiveDesk = document.querySelector('.seeLiveDesk');
+  const seeSourceDesk = document.querySelector('.seeSourceDesk');
+  const seeLiveMobile = document.querySelector('.seeLiveMobile');
+  const seeSourceMobile = document.querySelector('.seeSourceMobile');
 
   const project = {
     0: {
-      title: 'Multi-post stories',
+      title: 'Todo List',
       description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      image: './images/multiple.png',
+        'Todo List project built with Javascript and Html where user can be able to perform add data, remove, data, view data and edit data',
+      image: './images/todo.png',
+      seeLive: 'https://byiringiroscar.github.io/todo-list-microverse-webpack/dist/',
+      seeSource: 'https://github.com/byiringiroscar/todo-list-microverse-webpack',
     },
     1: {
-      title: 'no title',
+      title: 'Codegate',
       description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      image: './images/project_one.png',
-    },
-    2: {
-      title: 'Data Dashboard Healthcare',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      image: './images/project_two.png',
-    },
-    3: {
-      title: 'Webiste portfolio',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      image: './images/project_two.png',
-    },
-    4: {
-      title: 'Professional Art Printing Data More',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      image: './images/project_five.png',
-    },
-    5: {
-      title: 'Data Dashboard Healthcare',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      image: './images/project_two.png',
-    },
-    6: {
-      title: 'Webiste portfolio',
-      description:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-      image: './images/project_three.png',
+        'final capstone project for microverse for software development company called codegate',
+      image: './images/codegate.png',
+      seeLive: 'https://byiringiroscar.github.io/capstone_microverse_one.github.io/',
+      seeSource: 'https://github.com/byiringiroscar/capstone_microverse_one.github.io',
     },
   };
 
+  let html = '';
+  Object.keys(project).forEach((key) => {
+    const obj = project[key];
+    html += `<div class="project project-two">
+    <h3>${obj.title}</h3>
+    <p>${obj.description}</p>
+    <ul>
+        <li><a href="#" class="pro-two-a">html</a></li>
+        <li><a href="#" class="pro-two-a">bootstrap</a></li>
+        <li><a href="#" class="pro-two-a">javascript</a></li>
+    </ul>
+    <div class="view-project">
+        <a href="#" id="view-project-id" class="modal-link">See Project</a>
+    </div>
+</div>`;
+  });
+  projectContainer.innerHTML = html;
+  const projectSingle = document.querySelectorAll('.project-two');
+  projectSingle.forEach((ele, index) => {
+    ele.style.backgroundImage = `url(${project[index].image})`;
+  });
+  const viewProject = document.querySelectorAll('.modal-link');
   for (let i = 0; i < viewProject.length; i += 1) {
     viewProject[i].addEventListener('click', (event) => {
       event.preventDefault();
@@ -76,6 +76,10 @@ window.onload = () => {
       ModalImage.src = projImage;
       MobileModalDescription.textContent = project[i].description;
       MobileModalImage.src = projImage;
+      seeLiveDesk.href = project[i].seeLive;
+      seeSourceDesk.href = projImage[i].seeSource;
+      seeLiveMobile.href = project[i].seeLive;
+      seeSourceMobile.href = projImage[i].seeSource;
       containerModal.style.display = 'flex';
       firstSection.classList.add('blur');
       recentSection.classList.add('blur');
