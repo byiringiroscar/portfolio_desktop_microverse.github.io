@@ -77,9 +77,9 @@ window.onload = () => {
       MobileModalDescription.textContent = project[i].description;
       MobileModalImage.src = projImage;
       seeLiveDesk.href = project[i].seeLive;
-      seeSourceDesk.href = projImage[i].seeSource;
+      seeSourceDesk.href = project[i].seeSource;
       seeLiveMobile.href = project[i].seeLive;
-      seeSourceMobile.href = projImage[i].seeSource;
+      seeSourceMobile.href = project[i].seeSource;
       containerModal.style.display = 'flex';
       firstSection.classList.add('blur');
       recentSection.classList.add('blur');
