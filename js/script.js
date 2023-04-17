@@ -15,6 +15,8 @@ window.onload = () => {
   const modalTitleMobile = document.querySelector(
     '.modal-desc-mobile .modal-title h3',
   );
+  const modalTagDesk = document.querySelector('#tag-desk');
+  const modalTagMobile = document.querySelector('#tag-mobile');
   const modalDescription = document.querySelector('.single-desc p');
   const ModalImage = document.querySelector('.modal-desc img');
   const MobileModalImage = document.querySelector('.modal-main-desc img');
@@ -33,6 +35,7 @@ window.onload = () => {
       image: './images/todo.png',
       seeLive: 'https://byiringiroscar.github.io/todo-list-microverse-webpack/dist/',
       seeSource: 'https://github.com/byiringiroscar/todo-list-microverse-webpack',
+      tag: ['html', 'css', 'js'],
     },
     1: {
       title: 'Codegate',
@@ -41,19 +44,28 @@ window.onload = () => {
       image: './images/codegate.png',
       seeLive: 'https://byiringiroscar.github.io/capstone_microverse_one.github.io/',
       seeSource: 'https://github.com/byiringiroscar/capstone_microverse_one.github.io',
+      tag: ['html', 'css', 'js'],
+    },
+    2: {
+      title: 'Movies',
+      description:
+        'Movies API webapp displays movies name, poster, like & comments. It also allows user to submit their comments and likes',
+      image: './images/movies.png',
+      seeLive: 'https://byiringiroscar.github.io/movies-final-capstone-microverse-javascript/dist/',
+      seeSource: 'https://github.com/byiringiroscar/movies-final-capstone-microverse-javascript',
+      tag: ['html', 'css', 'js'],
     },
   };
 
   let html = '';
   Object.keys(project).forEach((key) => {
     const obj = project[key];
+    const tags = obj.tag.map((tag) => `<li><a href="#" class="pro-two-a">${tag}</a></li>`).join('');
     html += `<div class="project project-two">
     <h3>${obj.title}</h3>
     <p>${obj.description}</p>
     <ul>
-        <li><a href="#" class="pro-two-a">html</a></li>
-        <li><a href="#" class="pro-two-a">bootstrap</a></li>
-        <li><a href="#" class="pro-two-a">javascript</a></li>
+        ${tags}
     </ul>
     <div class="view-project">
         <a href="#" id="view-project-id" class="modal-link">See Project</a>
@@ -69,6 +81,9 @@ window.onload = () => {
   for (let i = 0; i < viewProject.length; i += 1) {
     viewProject[i].addEventListener('click', (event) => {
       event.preventDefault();
+      const tags = project[i].tag.map((tag) => `<li class="single-modal-tag"><a href="#" class="single-tag-item">${tag}</a></li>`).join('');
+      modalTagDesk.innerHTML = tags;
+      modalTagMobile.innerHTML = tags;
       const projImage = project[i].image;
       modalTitle.textContent = project[i].title;
       modalTitleMobile.textContent = project[i].title;
